@@ -1,5 +1,5 @@
 import './App.css';
-import About from '../src/pages/about';
+import About from './pages/about';
 import Community from './pages/community';
 import Contact from './pages/contact';
 import React from 'react';
@@ -27,6 +27,9 @@ const App = () => {
 
 
       <Switch>
+        <Route default exact path="/">Home
+
+        </Route>
         <Route path="/about">
           <About />
         </Route>
