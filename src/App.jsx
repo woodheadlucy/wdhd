@@ -2,7 +2,9 @@ import './App.css';
 import About from './pages/about';
 import Community from './pages/community';
 import Contact from './pages/contact';
+import Home from './pages/home'
 import React from 'react';
+import lucy from './stairs-sitting.png'
 import {
   BrowserRouter as Router,
   Switch,
@@ -17,17 +19,20 @@ const App = () => {
 
   return (
     <div className="App">
-      <header className="App-header">
-        Lucy
-      </header>
+
       <Router>
-        <Link className="menu-item" to="/about">About</Link>
-        <Link className="menu-item" to="/community">In the community</Link>
-        <Link className="menu-item" to="/contact">Contact</Link>
+      <header className="App-header">
+        <Link className="header" to="/">Lucy Woodhead</Link>
+      </header>
+        <div className="menu-wrapper">
+          <Link className="menu-item" to="/about">About</Link>
+          <Link className="menu-item" to="/community">In the community</Link>
+          <Link className="menu-item" to="/contact">Contact</Link>
+        </div>
 
 
       <Switch>
-        <Route default exact path="/">Home
+        <Route default exact path="/"><Home />
 
         </Route>
         <Route path="/about">
