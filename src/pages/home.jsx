@@ -1,8 +1,10 @@
 import styled from 'styled-components'
+import lucy from '../lw1.jpg'
 const Home = (props) => {
     return (
         <div className={props.className}>
         <h1>Home</h1>
+        <img className="img" src={lucy}/>
         <div className="content-wrapper">
             <div>
                 <h3>Full Stack Development</h3>
@@ -35,14 +37,33 @@ const Home = (props) => {
 
 const styledHome = styled(Home)`
 
+.img {
+    max-width: 150px;
+}
+
 .content-wrapper {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: flex-start;
 }
 
 .content-wrapper > div {
-    width: 33.33.%;
+    width: calc(33.3% - 2rem);
+    min-width: calc(33.3% - 2rem);
+    min-height: 100px;
+}
+
+@media only screen and (max-width: 700px) {
+    .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: unset;
+}
+
+.content-wrapper > div {
+    width: unset;
+}
 }
 
 `

@@ -39,15 +39,20 @@
   color: grey;
 }
 
+.menu-wrapper {
+  margin-top: 0.5rem;
+}
+
 .menu-item {
   cursor: pointer;
   margin: 1em;
   color: black;  
   text-decoration: none;
+  font-weight: bold;
 }
 
 .menu-item:hover {
-  color: grey;
+  color: lightgrey;
 }
 
 .menu-item:visited { 

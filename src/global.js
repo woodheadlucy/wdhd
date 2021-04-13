@@ -8,6 +8,8 @@ export const GlobalStyles = createGlobalStyle`
     width: 100%;
   }
 
+  p {font-size: 1.5rem}
+
   body {
     align-items: center;
     background: ${({ theme }) => theme.body};
