@@ -3,6 +3,7 @@ import About from "./pages/about";
 import Community from "./pages/community";
 import Contact from "./pages/contact";
 import Home from "./pages/home";
+import Portfolio from "./pages/portfolio";
 import React, { useState } from "react";
 import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme } from "./theme";
@@ -42,6 +43,9 @@ const App = () => {
             <Link className="menu-item" to="/about">
               About
             </Link>
+            <Link className="menu-item" to="/portfolio">
+              Portfolio
+            </Link>
             <Link className="menu-item" to="/community">
               In the community
             </Link>
@@ -56,6 +60,9 @@ const App = () => {
             </Route>
             <Route path="/about">
               <About />
+            </Route>
+            <Route path="/portfolio">
+              <Portfolio />
             </Route>
             <Route path="/community">
               <Community />

@@ -1,36 +1,15 @@
 import styled from 'styled-components'
 import lucy from '../lw1.jpg'
 
-const options = {
-    method: 'POST',
-    headers: {Accept: 'application/json', 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*'
-},
-    body: JSON.stringify({
-      profiles: [{email: 'lwoodhead38026@gmail.com'}, {phone_number: '07791664991'}]
-    })
-  };
-
-const submitForm = () => {
-
-    console.log("hit submit form")
-      fetch('https://a.klaviyo.com/api/v2/list/VFFeWZ/members?api_key=pk_e44220a3bd92c55b2d67a5bbbc6ff96e56', options)
-        .then(response => response.json())
-        .then(response => console.log(response))
-        .catch(err => console.error(err));
-  }
 const Home = (props) => {
 
-
- 
-      
     return (
         <div className={props.className}>
         <h1>Home</h1>
-        <img className="img" src={lucy}/>
-        <form style={{width: 400}} onSubmit={submitForm}>
-            <input type="text"></input>
-            <button type="submit">submit</button>
-        </form>
+        <div className="intro">
+            <img className="img" src={lucy}/>
+            <p>Enthusiastic individual that likes coding, talking, and travelling. Get in touch!</p>
+        </div>
         <div className="content-wrapper">
             <div>
                 <h3>Full Stack Development</h3>
@@ -62,7 +41,6 @@ const Home = (props) => {
 }
 
 const styledHome = styled(Home)`
-
 .img {
     max-width: 150px;
 }
