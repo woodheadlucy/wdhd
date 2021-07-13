@@ -8,7 +8,7 @@ const Home = (props) => {
         <h1>Home</h1>
         <div className="intro">
             <img className="img" src={lucy}/>
-            <p>Enthusiastic individual that likes coding, talking, and travelling. Get in touch!</p>
+            <p>Enthusiastic individual that likes coding, talking, and travelling. <a className="contact" target="_blank" href="https://www.linkedin.com/in/woodheadlucy/" >Get in touch!</a></p>
         </div>
         <div className="content-wrapper">
             <div>
@@ -46,6 +46,7 @@ const styledHome = styled(Home)`
 }
 
 .content-wrapper {
+    padding: 3rem;
     display: flex;
     flex-wrap: wrap;
     gap: 3rem;
@@ -58,6 +59,11 @@ const styledHome = styled(Home)`
     min-height: 100px;
 }
 
+.contact {
+    text-decoration: none;
+    font-weight: bold;
+}
+
 @media only screen and (max-width: 700px) {
     .content-wrapper {
     display: flex;
@@ -68,6 +74,8 @@ const styledHome = styled(Home)`
 .content-wrapper > div {
     width: unset;
 }
+
+
 }
 
 `

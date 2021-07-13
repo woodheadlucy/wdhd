@@ -10,7 +10,7 @@ const Portfolio = (props) => {
         <p>I have worked on complex platforms, websites, and apps in my career so far. Whilst I cannot share specific work examples here please take a look at my side projects.</p>
         <div>
             <div>
-                <a href="lucy-ecommerce-demo.netlify.app" target="_blank">Demo e-commerce site</a>
+                <a href="https://lucy-ecommerce-demo.netlify.app/" target="_blank">Demo e-commerce site</a>
                 <p>A front end site with React, Typescript, Material UI, and Styled Components. Fake store API used.</p>
                 <img src={ecommerce}/>
             </div>

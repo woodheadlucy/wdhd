@@ -1,6 +1,8 @@
-const Community = () => {
+import styled from 'styled-components'
+
+const Community = (props) => {
     return (
-        <>
+        <div className={props.className}>
         <h1>Community</h1>
         <p>Since working in the tech sector I've been lucky to foster connections with several organisations. Below includes some of the initiatives I've been part of.</p>
         <h2>Code First: Girls Fellow</h2>
@@ -13,9 +15,19 @@ const Community = () => {
         <p>I've had a very positive experience growing as a developer and it was an honour to speak during National Coding Week with a non-profit that focus on getting more women into technical roles.</p>
         <h2>Speaker at Code First Girls</h2>
         <p>I shared my story of pivoting from project management into coding, and what I found most useful in journey.</p>
-        </>
+        </div>
     )
 }
 
+const styledCommunity = styled(Community)`
+padding: 3rem;
+h2 {
+    text-align: left;
+}
 
-export default Community;
+ p {
+    text-align: left;
+}
+
+`;
+export default styledCommunity;

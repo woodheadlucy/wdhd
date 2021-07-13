@@ -8,7 +8,7 @@ export const GlobalStyles = createGlobalStyle`
     width: 100%;
   }
 
-  p {font-size: 1.5rem}
+  p {font-size: 1rem}
 
   body {
     align-items: center;
@@ -19,7 +19,7 @@ export const GlobalStyles = createGlobalStyle`
     justify-content: center;
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     transition: all 0.25s linear;
   }
 
