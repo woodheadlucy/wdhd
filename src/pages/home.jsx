@@ -12,8 +12,12 @@ const Home = (props) => {
         </div>
         <div className="content-wrapper">
             <div>
-                <h3>Full Stack Development</h3>
-                <p>Day to day use of React, JavaScript, TypeScript, node, and TDD. Also a fan of C# and GraphQL.</p>
+                <h3>Full Stack Web Development</h3>
+                <p>Day to day use of React, JavaScript, TypeScript, node, and TDD.</p>
+            </div>
+            <div>
+                <h3>Mobile development</h3>
+                <p>Recently picked up Swift and SwiftUI for iOS development. </p>
             </div>
             <div>
                 <h3>Data and databases</h3>
@@ -21,7 +25,7 @@ const Home = (props) => {
             </div>
             <div>
                 <h3>Azure</h3>
-                <p>Confident working with Azure products and services.</p>
+                <p>Confident working with Azure products and services. Azure Fundamentals and Azure AI Fundamentals exams completed.</p>
             </div>
             <div>
                  <h3>Project Management</h3>
